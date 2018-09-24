@@ -28,6 +28,10 @@ class HomePage extends Component {
                         {
                             label: 'NavBar 导航',
                             path: '/nav-bar'
+                        },
+                        {
+                            label: 'Toast 提示',
+                            path: '/toast'
                         }
                     ]
                 }

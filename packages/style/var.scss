@@ -1,10 +1,10 @@
 /* color variables */
 $black: #000;
 $white: #fff;
-$red: #f44;
-$blue: #38f;
-$orange: #f85;
-$green: #06bf04;
+$red: #FF0000;
+$blue: #1B9DFF;
+$orange: #FF6600;
+$green: #4CAF50;
 $gray: #c9c9c9;
 $gray-light: #e5e5e5;
 $gray-darker: #666;
@@ -13,7 +13,7 @@ $gray-dark: #999;
 /* default colors */
 $text-color: #333;
 $border-color: #eee;
-$active-color: #e8e8e8;
+$active-color: #ccc;
 $background-color: #f8f8f8;
 
 /* button */
@@ -21,8 +21,8 @@ $button-default-color: $text-color;
 $button-default-background-color: $white;
 $button-default-border-color: $border-color;
 $button-primary-color: $white;
-$button-primary-background-color: #4b0;
-$button-primary-border-color: #4b0;
+$button-primary-background-color: #1B9DFF;
+$button-primary-border-color: #1B9DFF;
 $button-danger-color: $white;
 $button-danger-background-color: $red;
 $button-danger-border-color: $red;

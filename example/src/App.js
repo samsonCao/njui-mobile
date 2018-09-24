@@ -6,7 +6,8 @@ import {
     ButtonPage,
     IconPage,
     CellPage,
-    NavBarPage
+    NavBarPage,
+    ToastPage
 } from './pages';
 
 const routes = [
@@ -15,6 +16,7 @@ const routes = [
     { path: '/icon', component: IconPage },
     { path: '/cell', component: CellPage },
     { path: '/nav-bar', component: NavBarPage },
+    { path: '/toast', component: ToastPage }
 ];
 
 const App = (props, context) =>

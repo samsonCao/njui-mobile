@@ -1,0 +1,40 @@
+@import "../style/fn";
+
+.nj-toast {
+    position: fixed;
+    width: 100%;
+    z-index: 1999;
+    font-size: 14px;
+    text-align: center;
+
+    &--mask {
+        display: flex;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        top: 0;
+    }
+
+    &--nomask {
+        position: fixed;
+        max-width: 50%;
+        width: auto;
+        left: 50%;
+        top: 50%;
+    }
+
+    &__notice {
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    &__text {
+        min-width: 60px;
+        border-radius: 3px;
+        color: #fff;
+        background-color: rgba(58,58,58,.9);
+        line-height: 1.5;
+        padding: 9px 15px;
+    }
+}

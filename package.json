@@ -58,5 +58,8 @@
     },
     "files": [
         "dist"
-    ]
+    ],
+    "dependencies": {
+        "rmc-notification": "^1.0.0"
+    }
 }
