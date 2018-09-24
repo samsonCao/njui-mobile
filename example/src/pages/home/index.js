@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types'; // eslint-disable-line
-import { Icon } from 'njui-mobile';
+import { Icon, Tag } from 'njui-mobile';
 import logoUrl from '../../assets/logo.png';
 
 class HomePage extends Component {
@@ -147,6 +147,7 @@ class HomePage extends Component {
                 {
                     label: '业务组件',
                     open: false,
+                    badge: <b style={{ color: '#4CAF50', fontSize: '12px', marginLeft: '10px' }}>NEW!</b>,
                     children: [
                         {
                             label: 'Card 卡片',
@@ -194,7 +195,10 @@ class HomePage extends Component {
                             <div key={i} className='demo-list'>
                                 <div className='demo-list__row'>
                                     <div className='demo-list__row--title' onClick={() => this.toggleMenu(i)}>
-                                        <span>{menu.label}</span>
+                                        <span>
+                                            {menu.label}
+                                            {menu.badge}
+                                        </span>
                                         <Icon name='arrow' />
                                     </div>
                                     <div className='demo-list__row--body'>

@@ -32,6 +32,10 @@ body {
     margin-right: 10px;
 }
 
+.demo-block__row .nj-tag:not(:last-child) {
+    margin-right: 10px;
+}
+
 .page {
     padding-top: 46px;
 }
