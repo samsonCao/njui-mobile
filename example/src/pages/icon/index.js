@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types'; // eslint-disable-line
-import { Icon } from 'njui-mobile';
+import { Icon, NavBar } from 'njui-mobile';
 
 class IconPage extends Component {
     render() {
         return (
-            <div>
+            <div className='page'>
+                <NavBar left-arrow title='Icon' fixed onLeftClick={() => window.history.go(-1)} />
                 <div className='demo-block'>
                     <div className='demo-block__title'>图标库</div>
                     <div className='demo-block__row'>

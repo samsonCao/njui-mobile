@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types'; // eslint-disable-line
-import { Button } from 'njui-mobile';
+import { Button, NavBar } from 'njui-mobile';
 
 class ButtonPage extends Component {
     render() {
         return (
-            <div>
+            <div className='page'>
+                <NavBar left-arrow title='Button' fixed onLeftClick={() => window.history.go(-1)} />
                 <div className='demo-block'>
                     <div className='demo-block__title'>按钮类型</div>
                     <div className='demo-block__row'>

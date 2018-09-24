@@ -1,4 +1,5 @@
 body {
+    margin: 0;
     color: #333;
     line-height: 1;
     background-color: #fafafa;
@@ -31,13 +32,13 @@ body {
     margin-right: 10px;
 }
 
-.demo-block__row .nj-icon {
-    margin-right: 10px;
-    margin-bottom: 10px;
+.page {
+    padding-top: 46px;
 }
 
-.page {
-    padding: 15px;
+.page__padding {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .page__title {

@@ -20,6 +20,14 @@ class HomePage extends Component {
                         {
                             label: 'Icon 图标',
                             path: '/icon'
+                        },
+                        {
+                            label: 'Cell 单元格',
+                            path: '/cell'
+                        },
+                        {
+                            label: 'NavBar 导航',
+                            path: '/nav-bar'
                         }
                     ]
                 }
@@ -49,7 +57,7 @@ class HomePage extends Component {
     render() {
         const { menus } = this.state;
         return (
-            <div className='page'>
+            <div className='page page__padding'>
                 <div className='page__title'>首页</div>
                 <div className='page__body'>
                     {menus.map((menu, i) => {

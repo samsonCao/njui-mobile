@@ -6,10 +6,11 @@ import './index.scss';
 class Icon extends Component {
     render() {
         // TODO: size 需要调整 @liuzhiyuan
-        const { name, color, size, ...others } = this.props;
+        const { name, color, size, className, ...others } = this.props;
         const cls = classNames({
             'nj-icon': true,
-            ['nj-icon-' + name]: true
+            ['nj-icon-' + name]: true,
+            [className]: className
         });
         const sty = {
             color: color,

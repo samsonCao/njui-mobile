@@ -4,13 +4,17 @@ import { Switch, HashRouter as Router, Route, IndexRoute, Link } from 'react-rou
 import {
     HomePage,
     ButtonPage,
-    IconPage
+    IconPage,
+    CellPage,
+    NavBarPage
 } from './pages';
 
 const routes = [
     { path: '/', component: HomePage, exact: true },
     { path: '/button', component: ButtonPage },
-    { path: '/icon', component: IconPage }
+    { path: '/icon', component: IconPage },
+    { path: '/cell', component: CellPage },
+    { path: '/nav-bar', component: NavBarPage },
 ];
 
 const App = (props, context) =>
