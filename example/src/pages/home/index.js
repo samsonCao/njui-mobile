@@ -51,8 +51,8 @@ class HomePage extends Component {
                             path: '/progress'
                         },
                         {
-                            label: 'Steps 步骤条',
-                            path: '/steps'
+                            label: 'Step 步骤条',
+                            path: '/step'
                         },
                         {
                             label: 'Swipe 轮播',

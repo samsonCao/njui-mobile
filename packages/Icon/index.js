@@ -5,7 +5,7 @@ import './index.scss';
 
 class Icon extends Component {
     render() {
-        // TODO: size 需要调整 @liuzhiyuan
+        // TODO: Size prop should be remove @liuzhiyuan
         const { name, color, size, className, ...others } = this.props;
         const cls = classNames({
             'nj-icon': true,

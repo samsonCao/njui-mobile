@@ -6,3 +6,4 @@ export { default as NavBarPage } from './nav-bar';
 export { default as ToastPage } from './toast';
 export { default as TagPage } from './tag';
 export { default as TabBarPage } from './tab-bar';
+export { default as StepPage } from './step';

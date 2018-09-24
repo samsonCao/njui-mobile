@@ -9,7 +9,8 @@ import {
     NavBarPage,
     ToastPage,
     TagPage,
-    TabBarPage
+    TabBarPage,
+    StepPage
 } from './pages';
 
 const routes = [
@@ -20,7 +21,8 @@ const routes = [
     { path: '/nav-bar', component: NavBarPage },
     { path: '/toast', component: ToastPage },
     { path: '/tag', component: TagPage },
-    { path: '/tab-bar', component: TabBarPage }
+    { path: '/tab-bar', component: TabBarPage },
+    { path: '/step', component: StepPage }
 ];
 
 const App = (props, context) =>

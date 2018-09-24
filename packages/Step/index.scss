@@ -1,0 +1,197 @@
+@import "../style/fn";
+
+.nj-step {
+    overflow: hidden;
+    background-color: $white;
+
+    &--horizontal {
+        padding: 0 10px;
+
+        .nj-steps__items {
+            display: flex;
+            margin: 0 0 10px;
+            overflow: hidden;
+            position: relative;
+            padding-bottom: 22px;
+
+            &.nj-steps__items--alone {
+                padding-top: 10px;
+            }
+        }
+    }
+
+    &--vertical {
+        padding: 0 0 0 35px;
+    }
+
+    &__icon {
+        float: left;
+        margin-right: 10px;
+    }
+
+    .nj-icon {
+        font-size: 40px;
+    }
+
+    &__message {
+        height: 40px;
+        margin: 15px 0;
+    }
+
+    &__title {
+        font-size: 14px;
+        color: $text-color;
+        padding-top: 4px;
+    }
+
+    &__desc {
+        font-size: 12px;
+        line-height: 1.5;
+        color: $gray-dark;
+    }
+}
+
+.nj-step-item {
+    flex: 1;
+    font-size: 14px;
+    position: relative;
+    color: $gray-dark;
+
+    &--horizontal {
+        float: left;
+
+        &:first-child {
+            .nj-step__title {
+                transform: none;
+                margin-left: 0;
+            }
+        }
+
+        &:last-child {
+            position: absolute;
+            right: 10px;
+            width: auto;
+
+            .nj-step__title {
+                transform: none;
+                margin-left: 0;
+            }
+
+            .nj-step__circle-container {
+                left: auto;
+                right: -9px;
+            }
+
+            .nj-step__line {
+                width: 0;
+            }
+        }
+
+        .nj-step__circle-container {
+            position: absolute;
+            top: 28px;
+            left: -8px;
+            padding: 0 8px;
+            background-color: $white;
+            z-index: 1;
+        }
+
+        .nj-step__title {
+            font-size: 12px;
+            transform: translate3d(-50%, 0, 0);
+            display: inline-block;
+            margin-left: 3px;
+        }
+
+        .nj-step__line {
+            position: absolute;
+            left: 0;
+            top: 30px;
+            width: 100%;
+            height: 1px;
+            background-color: $border-color;
+        }
+
+        &.nj-step--finish {
+            color: $text-color;
+
+            .nj-step__circle,
+            .nj-step__line {
+                background-color: $green;
+            }
+        }
+
+        &.nj-step--process {
+            color: $text-color;
+
+            .nj-step__circle-container {
+                top: 24px;
+            }
+
+            .nj-icon {
+                font-size: 12px;
+                color: $green;
+                display: block;
+            }
+        }
+    }
+
+    .nj-step__circle {
+        display: block;
+        width: 5px;
+        height: 5px;
+        background-color: #888;
+        border-radius: 50%;
+    }
+
+    &--vertical {
+        float: none;
+        display: block;
+        font-size: 14px;
+        line-height: 18px;
+        padding: 10px 10px 10px 0;
+
+        &:not(:last-child)::after {
+            border-bottom-width: 1px;
+        }
+
+        &:first-child {
+            &::before {
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 20px;
+                background-color: $white;
+                top: 0;
+                left: -15px;
+                z-index: 1;
+            }
+        }
+
+        .nj-step__circle-container > i {
+            position: absolute;
+            z-index: 2;
+        }
+
+        .nj-icon-checked {
+            top: 12px;
+            left: -20px;
+            line-height: 1;
+            font-size: 12px;
+        }
+
+        .nj-step__circle {
+            top: 16px;
+            left: -17px;
+        }
+
+        .nj-step__line {
+            position: absolute;
+            top: 0;
+            left: -15px;
+            width: 1px;
+            height: 100%;
+            background-color: $border-color;
+        }
+    }
+}
