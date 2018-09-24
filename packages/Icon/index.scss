@@ -1,0 +1,396 @@
+@import "../style/fn";
+
+@font-face {
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'nj-icon';
+    src: url('https://img.yzcdn.cn/vant/vant-icon-76f274.ttf') format('truetype');
+}
+
+.nj-icon {
+    position: relative;
+    display: inline-block;
+    font: normal normal normal 14px/1 "nj-icon";
+    font-size: inherit;
+    text-rendering: auto;
+
+    &:before {
+        display: inline-block;
+    }
+}
+
+.nj-icon-add-o::before {
+    content: "\F000";
+}
+
+.nj-icon-add::before {
+    content: "\F001";
+}
+
+.nj-icon-add2::before {
+    content: "\F002";
+}
+
+.nj-icon-after-sale::before {
+    content: "\F003";
+}
+
+.nj-icon-aim::before {
+    content: "\F004";
+}
+
+.nj-icon-alipay::before {
+    content: "\F005";
+}
+
+.nj-icon-arrow-left::before {
+    content: "\F006";
+}
+
+.nj-icon-arrow::before {
+    content: "\F007";
+}
+
+.nj-icon-balance-pay::before {
+    content: "\F008";
+}
+
+.nj-icon-browsing-history::before {
+    content: "\F009";
+}
+
+.nj-icon-card::before {
+    content: "\F00A";
+}
+
+.nj-icon-cart::before {
+    content: "\F00B";
+}
+
+.nj-icon-cash-back-record::before {
+    content: "\F00C";
+}
+
+.nj-icon-cash-on-deliver::before {
+    content: "\F00D";
+}
+
+.nj-icon-certificate::before {
+    content: "\F00E";
+}
+
+.nj-icon-chat::before {
+    content: "\F00F";
+}
+
+.nj-icon-check::before {
+    content: "\F010";
+}
+
+.nj-icon-checked::before {
+    content: "\F011";
+}
+
+.nj-icon-clear::before {
+    content: "\F012";
+}
+
+.nj-icon-clock::before {
+    content: "\F013";
+}
+
+.nj-icon-close::before {
+    content: "\F014";
+}
+
+.nj-icon-completed::before {
+    content: "\F015";
+}
+
+.nj-icon-contact::before {
+    content: "\F016";
+}
+
+.nj-icon-coupon::before {
+    content: "\F017";
+}
+
+.nj-icon-credit-pay::before {
+    content: "\F018";
+}
+
+.nj-icon-debit-pay::before {
+    content: "\F019";
+}
+
+.nj-icon-delete::before {
+    content: "\F01A";
+}
+
+.nj-icon-description::before {
+    content: "\F01B";
+}
+
+.nj-icon-discount::before {
+    content: "\F01C";
+}
+
+.nj-icon-ecard-pay::before {
+    content: "\F01D";
+}
+
+.nj-icon-edit-data::before {
+    content: "\F01E";
+}
+
+.nj-icon-edit::before {
+    content: "\F01F";
+}
+
+.nj-icon-exchange-record::before {
+    content: "\F020";
+}
+
+.nj-icon-exchange::before {
+    content: "\F021";
+}
+
+.nj-icon-fail::before {
+    content: "\F022";
+}
+
+.nj-icon-free-postage::before {
+    content: "\F023";
+}
+
+.nj-icon-gift-card-pay::before {
+    content: "\F024";
+}
+
+.nj-icon-gift-card::before {
+    content: "\F025";
+}
+
+.nj-icon-gift::before {
+    content: "\F026";
+}
+
+.nj-icon-gold-coin::before {
+    content: "\F027";
+}
+
+.nj-icon-goods-collect::before {
+    content: "\F028";
+}
+
+.nj-icon-home::before {
+    content: "\F029";
+}
+
+.nj-icon-hot-sale::before {
+    content: "\F02A";
+}
+
+.nj-icon-hot::before {
+    content: "\F02B";
+}
+
+.nj-icon-idcard::before {
+    content: "\F02C";
+}
+
+.nj-icon-info-o::before {
+    content: "\F02D";
+}
+
+.nj-icon-like-o::before {
+    content: "\F02E";
+}
+
+.nj-icon-like::before {
+    content: "\F02F";
+}
+
+.nj-icon-location::before {
+    content: "\F030";
+}
+
+.nj-icon-logistics::before {
+    content: "\F031";
+}
+
+.nj-icon-more-o::before {
+    content: "\F032";
+}
+
+.nj-icon-more::before {
+    content: "\F033";
+}
+
+.nj-icon-new-arrival::before {
+    content: "\F034";
+}
+
+.nj-icon-new::before {
+    content: "\F035";
+}
+
+.nj-icon-other-pay::before {
+    content: "\F036";
+}
+
+.nj-icon-passed::before {
+    content: "\F037";
+}
+
+.nj-icon-password-not-view::before {
+    content: "\F038";
+}
+
+.nj-icon-password-view::before {
+    content: "\F039";
+}
+
+.nj-icon-pause::before {
+    content: "\F03A";
+}
+
+.nj-icon-peer-pay::before {
+    content: "\F03B";
+}
+
+.nj-icon-pending-deliver::before {
+    content: "\F03C";
+}
+
+.nj-icon-pending-evaluate::before {
+    content: "\F03D";
+}
+
+.nj-icon-pending-orders::before {
+    content: "\F03E";
+}
+
+.nj-icon-pending-payment::before {
+    content: "\F03F";
+}
+
+.nj-icon-phone::before {
+    content: "\F040";
+}
+
+.nj-icon-photo::before {
+    content: "\F041";
+}
+
+.nj-icon-photograph::before {
+    content: "\F042";
+}
+
+.nj-icon-play::before {
+    content: "\F043";
+}
+
+.nj-icon-point-gift::before {
+    content: "\F044";
+}
+
+.nj-icon-points-mall::before {
+    content: "\F045";
+}
+
+.nj-icon-points::before {
+    content: "\F046";
+}
+
+.nj-icon-qr-invalid::before {
+    content: "\F047";
+}
+
+.nj-icon-qr::before {
+    content: "\F048";
+}
+
+.nj-icon-question::before {
+    content: "\F049";
+}
+
+.nj-icon-receive-gift::before {
+    content: "\F04A";
+}
+
+.nj-icon-records::before {
+    content: "\F04B";
+}
+
+.nj-icon-search::before {
+    content: "\F04C";
+}
+
+.nj-icon-send-gift::before {
+    content: "\F04D";
+}
+
+.nj-icon-setting::before {
+    content: "\F04E";
+}
+
+.nj-icon-share::before {
+    content: "\F04F";
+}
+
+.nj-icon-shop-collect::before {
+    content: "\F050";
+}
+
+.nj-icon-shop::before {
+    content: "\F051";
+}
+
+.nj-icon-shopping-cart::before {
+    content: "\F052";
+}
+
+.nj-icon-sign::before {
+    content: "\F053";
+}
+
+.nj-icon-stop::before {
+    content: "\F054";
+}
+
+.nj-icon-success::before {
+    content: "\F055";
+}
+
+.nj-icon-tosend::before {
+    content: "\F056";
+}
+
+.nj-icon-underway::before {
+    content: "\F057";
+}
+
+.nj-icon-upgrade::before {
+    content: "\F058";
+}
+
+.nj-icon-value-card::before {
+    content: "\F059";
+}
+
+.nj-icon-wap-home::before {
+    content: "\F05A";
+}
+
+.nj-icon-wap-nav::before {
+    content: "\F05B";
+}
+
+.nj-icon-warn::before {
+    content: "\F05C";
+}
+
+.nj-icon-wechat::before {
+    content: "\F05D";
+}
