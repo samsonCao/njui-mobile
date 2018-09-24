@@ -49,6 +49,20 @@ class ButtonPage extends Component {
                         <Button disabled>禁用按钮</Button>
                     </div>
                 </div>
+
+                <div className='demo-block'>
+                    <div className='demo-block__title'>点击事件</div>
+                    <div className='demo-block__row'>
+                        <Button onClick={() => window.alert('You clicked me!')}>Click</Button>
+                    </div>
+                </div>
+
+                <div className='demo-block'>
+                    <div className='demo-block__title'>加载状态</div>
+                    <div className='demo-block__row'>
+                        <Button loading>加载中</Button>
+                    </div>
+                </div>
             </div>
         );
     }

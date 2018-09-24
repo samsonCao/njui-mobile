@@ -20,8 +20,12 @@ class Button extends Component {
             'nj-btn--plain': plain,
             'nj-btn--disabled': disabled
         });
+
+        // TODO: Button needs to support loading @liuzhiyuan
         return (
-            <button className={cls} {...others}>{children}</button>
+            <button className={cls} {...others}>
+                <span>{children}</span>
+            </button>
         );
     }
 }
