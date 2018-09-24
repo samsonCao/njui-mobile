@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types'; // eslint-disable-line
-import { Icon, Tag } from 'njui-mobile';
+import { Icon } from 'njui-mobile';
 import logoUrl from '../../assets/logo.png';
 
 class HomePage extends Component {
@@ -65,6 +65,10 @@ class HomePage extends Component {
                         {
                             label: 'Tag 标记',
                             path: '/tag'
+                        },
+                        {
+                            label: 'TabBar 标签栏',
+                            path: '/tab-bar'
                         }
                     ]
                 },

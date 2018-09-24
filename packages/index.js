@@ -4,3 +4,4 @@ export { default as Cell } from './Cell';
 export { default as NavBar } from './NavBar';
 export { default as Toast } from './Toast';
 export { default as Tag } from './Tag';
+export { default as TabBar } from './TabBar';

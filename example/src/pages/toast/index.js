@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'; // eslint-disable-line
 import { Button, NavBar, Toast } from 'njui-mobile';
 
 class ToastPage extends Component {

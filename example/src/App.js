@@ -8,7 +8,8 @@ import {
     CellPage,
     NavBarPage,
     ToastPage,
-    TagPage
+    TagPage,
+    TabBarPage
 } from './pages';
 
 const routes = [
@@ -18,7 +19,8 @@ const routes = [
     { path: '/cell', component: CellPage },
     { path: '/nav-bar', component: NavBarPage },
     { path: '/toast', component: ToastPage },
-    { path: '/tag', component: TagPage }
+    { path: '/tag', component: TagPage },
+    { path: '/tab-bar', component: TabBarPage }
 ];
 
 const App = (props, context) =>
