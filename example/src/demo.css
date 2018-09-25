@@ -25,7 +25,7 @@ body {
 }
 
 .demo-block__row {
-    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 .demo-block__row .nj-btn:not(:last-child) {

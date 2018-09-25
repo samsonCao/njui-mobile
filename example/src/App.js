@@ -11,7 +11,8 @@ import {
     TagPage,
     TabBarPage,
     StepPage,
-    SwipePage
+    SwipePage,
+    ProgressPage
 } from './pages';
 
 const routes = [
@@ -24,7 +25,8 @@ const routes = [
     { path: '/tag', component: TagPage },
     { path: '/tab-bar', component: TabBarPage },
     { path: '/step', component: StepPage },
-    { path: '/swipe', component: SwipePage }
+    { path: '/swipe', component: SwipePage },
+    { path: '/progress', component: ProgressPage }
 ];
 
 const App = (props, context) =>

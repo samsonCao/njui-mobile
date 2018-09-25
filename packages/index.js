@@ -7,3 +7,4 @@ export { default as Tag } from './Tag';
 export { default as TabBar } from './TabBar';
 export { default as Step } from './Step';
 export { default as Swipe } from './Swipe';
+export { default as Progress } from './Progress';
