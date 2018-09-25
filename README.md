@@ -41,7 +41,7 @@ ReactDOM.render((
 
 ## Mobile Demo
 
-<img src="./assets/preview.png" style="width: 300px" />
+<img src="./assets/preview_code.png" style="width: 200px" />
 
 ## License
 
