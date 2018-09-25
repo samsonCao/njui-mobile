@@ -1,0 +1,17 @@
+@import "../style/fn";
+
+.nj-swipe {
+    position: relative;
+
+    &__dots {
+        padding: 10px 0;
+    }
+    &__dot {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #000;
+        margin: 0 5px;
+    }
+}

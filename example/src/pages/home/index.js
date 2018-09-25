@@ -19,7 +19,7 @@ class HomePage extends Component {
                             path: '/layout'
                         },
                         {
-                            label: 'Badge 徽章',
+                            label: 'Swipe 徽章',
                             path: '/badge'
                         },
                         {

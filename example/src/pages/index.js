@@ -7,3 +7,4 @@ export { default as ToastPage } from './toast';
 export { default as TagPage } from './tag';
 export { default as TabBarPage } from './tab-bar';
 export { default as StepPage } from './step';
+export { default as SwipePage } from './swipe';
