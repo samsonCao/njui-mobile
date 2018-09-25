@@ -1,4 +1,3 @@
-Create By [create-react-library](https://github.com/transitive-bullshit/create-react-library)
 # NjUI-Mobile
 
 轻量、高扩展的移动端 React 组件库
@@ -7,7 +6,8 @@ Create By [create-react-library](https://github.com/transitive-bullshit/create-r
 
 + 50+ 常用组件
 + 完善的文档和示例
-+ 轻量
++ 轻量, gzip 后 50kb
++ 扩展性强, 适合继续封装
 
 ## Install
 
