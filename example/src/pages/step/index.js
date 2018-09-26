@@ -40,7 +40,7 @@ class StepPage extends Component {
         const { activeIndex } = this.state;
         return (
             <div className='page'>
-                <NavBar left-arrow title='Step' fixed onLeftClick={() => window.history.go(-1)} />
+                <NavBar left-text='返回' title='Step' fixed onLeftClick={() => window.history.go(-1)} />
 
                 <div className='demo-block'>
                     <div className='demo-block__title'>基础用法</div>

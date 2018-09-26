@@ -10,7 +10,7 @@ class ToastPage extends Component {
     render() {
         return (
             <div className='page'>
-                <NavBar left-arrow title='Toast' fixed onLeftClick={() => window.history.go(-1)} />
+                <NavBar left-text='返回' title='Toast' fixed onLeftClick={() => window.history.go(-1)} />
 
                 <div className='demo-block'>
                     <div className='demo-block__title'>文字提示</div>

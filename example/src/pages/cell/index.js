@@ -8,7 +8,7 @@ class CellPage extends Component {
     render() {
         return (
             <div className='page'>
-                <NavBar left-arrow title='Cell' fixed onLeftClick={() => window.history.go(-1)} />
+                <NavBar left-text='返回' title='Cell' fixed onLeftClick={() => window.history.go(-1)} />
                 <div className='demo-block'>
                     <div className='demo-block__title'>基础用法</div>
                     <div className='demo-block__row' style={{ marginLeft: '-15px', marginRight: '-15px' }}>

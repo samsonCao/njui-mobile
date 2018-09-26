@@ -15,7 +15,7 @@ class ModalPage extends Component {
         const { confirmVisible } = this.state;
         return (
             <div className='page'>
-                <NavBar left-arrow title='Modal' fixed onLeftClick={() => window.history.go(-1)} />
+                <NavBar left-text='返回' title='Modal' fixed onLeftClick={() => window.history.go(-1)} />
 
                 <div className='demo-block'>
                     <div className='demo-block__title'>消息提示</div>

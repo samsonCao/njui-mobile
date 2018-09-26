@@ -48,6 +48,7 @@ class Modal extends Component {
 Modal.propTypes = {
     visible: PropTypes.bool,
     title: PropTypes.string,
+    footer: PropTypes.object,
     okText: PropTypes.string,
     cancelText: PropTypes.string,
     onCancel: PropTypes.func,
