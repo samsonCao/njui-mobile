@@ -7,12 +7,14 @@ class ModalPage extends Component {
         super(props);
 
         this.state = {
+            alertVisible: false,
+            noAlertVisible: false,
             confirmVisible: false
         };
     }
 
     render() {
-        const { confirmVisible } = this.state;
+        const { alertVisible, noAlertVisible, confirmVisible } = this.state;
         return (
             <div className='page'>
                 <NavBar left-text='返回' title='Modal' fixed onLeftClick={() => window.history.go(-1)} />
@@ -20,8 +22,8 @@ class ModalPage extends Component {
                 <div className='demo-block'>
                     <div className='demo-block__title'>消息提示</div>
                     <div className='demo-block__row'>
-                        <Button plain>Alert</Button>
-                        <Button plain>无标题 Alert</Button>
+                        <Button plain onClick={() => this.setState({ alertVisible: true })}>Alert</Button>
+                        <Button plain onClick={() => this.setState({ noAlertVisible: true })}>无标题 Alert</Button>
                     </div>
                 </div>
 
@@ -38,6 +40,23 @@ class ModalPage extends Component {
                         <Button plain>内嵌表单</Button>
                     </div>
                 </div>
+
+                <Modal
+                    visible={alertVisible}
+                    title='标题'
+                    okText='确认'
+                    onOk={() => this.setState({ alertVisible: false })}
+                >
+                    内容
+                </Modal>
+
+                <Modal
+                    visible={noAlertVisible}
+                    okText='确认'
+                    onOk={() => this.setState({ noAlertVisible: false })}
+                >
+                    内容
+                </Modal>
 
                 <Modal
                     visible={confirmVisible}

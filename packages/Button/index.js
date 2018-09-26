@@ -5,7 +5,17 @@ import './index.scss';
 
 class Button extends Component {
     render() {
-        const { type = 'default', size = 'normal', block, plain, disabled, loading, children, className, ...others } = this.props;
+        const {
+            type = 'default',
+            size = 'normal',
+            block,
+            plain,
+            disabled,
+            loading,
+            children,
+            className,
+            ...others
+        } = this.props;
         const cls = classNames({
             'nj-btn': true,
             'nj-btn--default': type === 'default',
@@ -32,11 +42,29 @@ class Button extends Component {
 }
 
 Button.propTypes = {
+    /**
+     * 按钮类型
+     */
     type: PropTypes.oneOf(['default', 'primary', 'warning', 'danger']),
+    /**
+     * 按钮尺寸
+     */
     size: PropTypes.oneOf(['mini', 'small', 'normal', 'large']),
+    /**
+     * 全屏按钮
+     */
     block: PropTypes.bool,
+    /**
+     * 空心按钮
+     */
     plain: PropTypes.bool,
+    /**
+     * 是否禁用
+     */
     disabled: PropTypes.bool,
+    /**
+     * 加载状态
+     */
     loading: PropTypes.bool,
     children: PropTypes.node
 };
