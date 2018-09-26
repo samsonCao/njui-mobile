@@ -145,6 +145,10 @@ class HomePage extends Component {
                         {
                             label: 'Toast 提示',
                             path: '/toast'
+                        },
+                        {
+                            label: 'Modal 模态框',
+                            path: '/modal'
                         }
                     ]
                 },
