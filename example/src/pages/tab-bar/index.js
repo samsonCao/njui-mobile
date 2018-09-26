@@ -18,15 +18,15 @@ class TabBarPage extends Component {
                             <TabBar.Item active icon='home'>
                                 标签
                             </TabBar.Item>
-                            <TabBar.Item icon='chat' dot onClick={() => window.alert('You clicked me!')}>
+                            <TabBar.Item icon='home' dot onClick={() => window.alert('You clicked me!')}>
                                 标签
                             </TabBar.Item>
-                            <TabBar.Item icon='records' info='10'>
+                            <TabBar.Item icon='home' info='10'>
                                 标签
                             </TabBar.Item>
                             <TabBar.Item
-                                value='contact'
-                                icon='contact'
+                                value='home'
+                                icon='home'
                                 info='...'
                             >
                                 标签
@@ -45,13 +45,13 @@ class TabBarPage extends Component {
                             <TabBar.Item active icon='home'>
                                 标签
                             </TabBar.Item>
-                            <TabBar.Item icon='chat' onClick={() => window.alert('You clicked me!')}>
+                            <TabBar.Item icon='home' onClick={() => window.alert('You clicked me!')}>
                                 点击
                             </TabBar.Item>
-                            <TabBar.Item icon='records'>
+                            <TabBar.Item icon='home'>
                                 标签
                             </TabBar.Item>
-                            <TabBar.Item icon='contact'>
+                            <TabBar.Item icon='home'>
                                 标签
                             </TabBar.Item>
                         </TabBar>
@@ -69,14 +69,14 @@ class TabBarPage extends Component {
                             <TabBar.Item active icon='home'>
                                 标签
                             </TabBar.Item>
-                            <TabBar.Item icon='chat' dot>
+                            <TabBar.Item icon='home' dot>
                                 标签
                             </TabBar.Item>
-                            <TabBar.Item icon='records' info='10'>
+                            <TabBar.Item icon='home' info='10'>
                                 标签
                             </TabBar.Item>
                             <TabBar.Item
-                                icon='contact'
+                                icon='home'
                                 info='...'
                             >
                                 标签

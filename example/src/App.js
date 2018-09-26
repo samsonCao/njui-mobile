@@ -13,7 +13,10 @@ import {
     StepPage,
     SwipePage,
     ProgressPage,
-    ModalPage
+    ModalPage,
+    TabPage,
+    BadgePage,
+    PaginationPage
 } from './pages';
 
 const routes = [
@@ -28,7 +31,10 @@ const routes = [
     { path: '/step', component: StepPage },
     { path: '/swipe', component: SwipePage },
     { path: '/progress', component: ProgressPage },
-    { path: '/modal', component: ModalPage }
+    { path: '/modal', component: ModalPage },
+    { path: '/tab', component: TabPage },
+    { path: '/badge', component: BadgePage },
+    { path: '/pagination', component: PaginationPage }
 ];
 
 const App = (props, context) =>

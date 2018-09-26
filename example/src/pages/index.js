@@ -10,3 +10,6 @@ export { default as StepPage } from './step';
 export { default as SwipePage } from './swipe';
 export { default as ProgressPage } from './progress';
 export { default as ModalPage } from './modal';
+export { default as TabPage } from './tab';
+export { default as BadgePage } from './badge';
+export { default as PaginationPage } from './pagination';

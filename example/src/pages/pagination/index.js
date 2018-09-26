@@ -6,7 +6,7 @@ class SwipePage extends Component {
     render() {
         return (
             <div>
-                <NavBar left-text='返回' title='Badge' fixed onLeftClick={() => window.history.go(-1)} />
+                <NavBar left-text='返回' title='Pagination' fixed onLeftClick={() => window.history.go(-1)} />
             </div>
         );
     }

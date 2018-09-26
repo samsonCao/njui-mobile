@@ -32,8 +32,6 @@
     }
 
     &-group {
-        border-top: 1px solid #eee;
-        border-bottom: 1px solid #eee;
         background-color: $white;
     }
 
@@ -62,14 +60,14 @@
     &__left-icon {
         min-width: 1em;
         font-size: 16px;
-        line-height: 24px;
+        line-height: 24px!important;
         margin-right: 5px;
     }
 
     &__right-icon {
         color: $gray-dark;
         font-size: 12px;
-        line-height: 24px;
+        line-height: 24px!important;
         margin-left: 5px;
 
         &--left::before {

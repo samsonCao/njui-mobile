@@ -32,7 +32,7 @@ class CellPage extends Component {
                     <div className='demo-block__title'>展示图标</div>
                     <div className='demo-block__row' style={{ marginLeft: '-15px', marginRight: '-15px' }}>
                         <CellGroup>
-                            <Cell title='单元格' value='内容' icon='location' />
+                            <Cell title='单元格' value='内容' icon='home' />
                         </CellGroup>
                     </div>
                 </div>
