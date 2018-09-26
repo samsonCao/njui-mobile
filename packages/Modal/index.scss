@@ -1,0 +1,52 @@
+@import "../style/fn";
+
+.nj-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 85%;
+    font-size: 16px;
+    overflow: hidden;
+    transition: .3s;
+    border-radius: 4px;
+    background-color: $white;
+    transform: translate3d(-50%, -50%, 0);
+    z-index: 2000;
+    &__header {
+        padding: 15px 0 0;
+        text-align: center;
+
+        &--isolated {
+            padding: 25px 0;
+        }
+    }
+
+    &__content {
+        padding: 20px;
+        line-height: 1.5;
+        color: #666;
+        font-size: 14px;
+    }
+
+    &__footer {
+        overflow: hidden;
+        user-select: none;
+
+        &--buttons {
+            display: flex;
+
+            .nj-btn {
+                flex: 1;
+                border: none;
+            }
+        }
+    }
+
+    &__ok {
+        color: $blue;
+    }
+
+    &__cancel {
+
+    }
+}

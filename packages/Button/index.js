@@ -5,7 +5,7 @@ import './index.scss';
 
 class Button extends Component {
     render() {
-        const { type = 'default', size = 'normal', block, plain, disabled, loading, children, ...others } = this.props;
+        const { type = 'default', size = 'normal', block, plain, disabled, loading, children, className, ...others } = this.props;
         const cls = classNames({
             'nj-btn': true,
             'nj-btn--default': type === 'default',
@@ -18,7 +18,8 @@ class Button extends Component {
             'nj-btn--large': size === 'large',
             'nj-btn--block': block,
             'nj-btn--plain': plain,
-            'nj-btn--disabled': disabled
+            'nj-btn--disabled': disabled,
+            [className]: className
         });
 
         // TODO: Button needs to support loading @liuzhiyuan
