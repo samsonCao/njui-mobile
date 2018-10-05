@@ -12,6 +12,9 @@
     text-align: center;
     -webkit-appearance: none;
     -webkit-text-size-adjust: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
 
     &:before {

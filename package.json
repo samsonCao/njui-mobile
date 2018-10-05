@@ -1,7 +1,7 @@
 {
     "name": "njui-mobile",
-    "version": "0.0.1",
-    "description": "👙Lightweight Mobile UI Components built on React",
+    "version": "0.1.1",
+    "description": "轻量、高扩展的移动端 React 组件库",
     "author": "Liu ZhiYuan <liuzhiyuan2018@gmail.com>",
     "license": "MIT",
     "repository": "nanjiren/njui-mobile",
