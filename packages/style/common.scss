@@ -1,3 +1,10 @@
+@charset "UTF-8";
+
+// 移除 Safari 点击效果
+html {
+    -webkit-tap-highlight-color: transparent;
+}
+
 .no-select {
     -webkit-user-select: none;
     -moz-user-select: none;

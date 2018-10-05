@@ -16,6 +16,14 @@ class Button extends Component {
             className,
             ...others
         } = this.props;
+
+        let unclickable = false;
+        if (disabled) {
+            unclickable = true;
+        }
+        if (loading) {
+            unclickable = true;
+        }
         const cls = classNames({
             'no-select': true,
             'nj-btn': true,
@@ -30,6 +38,7 @@ class Button extends Component {
             'nj-btn--block': block,
             'nj-btn--plain': plain,
             'nj-btn--disabled': disabled,
+            'nj-btn--unclickable': unclickable,
             [className]: className
         });
 
