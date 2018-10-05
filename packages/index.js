@@ -11,3 +11,5 @@ export { default as Step } from './Step';
 export { default as Swipe } from './Swipe';
 export { default as Progress } from './Progress';
 export { default as Modal } from './Modal';
+export { default as Row } from './Row';
+export { default as Col } from './Col';

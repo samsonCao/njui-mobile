@@ -13,3 +13,4 @@ export { default as ModalPage } from './modal';
 export { default as TabPage } from './tab';
 export { default as BadgePage } from './badge';
 export { default as PaginationPage } from './pagination';
+export { default as LayoutPage } from './layout';

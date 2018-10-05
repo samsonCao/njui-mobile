@@ -1,0 +1,17 @@
+@import "../style/fn";
+
+.nj-col {
+    float: left;
+    box-sizing: border-box;
+}
+
+@for $i from 1 to 24 {
+    $width: $i * 100% / 24;
+
+    .nj-col--#{$i} {
+        width: $width;
+    }
+    .nj-col--offset-#{$i} {
+        margin-left: $width;
+    }
+}

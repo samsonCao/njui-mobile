@@ -16,7 +16,8 @@ import {
     ModalPage,
     TabPage,
     BadgePage,
-    PaginationPage
+    PaginationPage,
+    LayoutPage
 } from './pages';
 
 const routes = [
@@ -34,7 +35,8 @@ const routes = [
     { path: '/modal', component: ModalPage },
     { path: '/tab', component: TabPage },
     { path: '/badge', component: BadgePage },
-    { path: '/pagination', component: PaginationPage }
+    { path: '/pagination', component: PaginationPage },
+    { path: '/layout', component: LayoutPage }
 ];
 
 const App = (props, context) =>
