@@ -1,0 +1,73 @@
+@import "../style/fn";
+
+.nj-field {
+    .nj-cell__title {
+        max-width: 90px;
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+    }
+
+    &__control {
+        line-height: inherit;
+        border: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        resize: none;
+        display: block;
+        box-sizing: border-box;
+        background-color: transparent;
+        font-size: 14px;
+
+        &:disabled {
+            opacity: 1;
+            color: $gray-darker;
+            background-color: transparent;
+        }
+
+        &--center {
+            text-align: center;
+        }
+
+        &--right {
+            text-align: right;
+        }
+
+        /* for ios wechat */
+        &[type="date"],
+        &[type="time"] {
+            min-height: 24px;
+        }
+    }
+
+    &__clear,
+    &__icon,
+    &__button {
+        flex-shrink: 0;
+    }
+
+    &__clear,
+    &__icon {
+        padding: 0 10px;
+        line-height: inherit;
+        margin-right: -10px;
+    }
+
+    &__clear {
+        color: $gray;
+    }
+
+    &__icon .nj-icon {
+        display: block;
+        font-size: 16px;
+        color: $gray-dark;
+        line-height: inherit;
+    }
+
+    &__button {
+        padding-left: 10px;
+    }
+}

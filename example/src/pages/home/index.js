@@ -19,10 +19,6 @@ class HomePage extends Component {
                             path: '/layout'
                         },
                         {
-                            label: 'Badge 徽章',
-                            path: '/badge'
-                        },
-                        {
                             label: 'Button 按钮',
                             path: '/button'
                         },
@@ -82,7 +78,7 @@ class HomePage extends Component {
                         },
                         {
                             label: 'Field 输入框',
-                            path: '/checkbox'
+                            path: '/field'
                         },
                         {
                             label: 'NumberKeyboard 数字键盘',

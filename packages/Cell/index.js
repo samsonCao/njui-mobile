@@ -7,9 +7,14 @@ import classNames from '../utils/classnames';
 
 class Cell extends Component {
     render() {
-        const { title, value, icon, label, children } = this.props;
-        const arrowDirection = this.props['arrow-direction'] || 'right';
+        const { required, title, value, icon, label, className, children } = this.props;
+        const arrowDirection = this.props['arrow-direction'];
 
+        const cls = classNames({
+            'nj-cell': true,
+            'nj-cell--required': required,
+            [className]: className
+        });
         const labelEl = label && <div className='nj-cell__label'>{label}</div>;
         let rightIcon;
         if (arrowDirection) {
@@ -20,12 +25,12 @@ class Cell extends Component {
             rightIcon = <Icon className={arrowCls} name='arrow' />;
         }
         return (
-            <div className='nj-cell'>
+            <div className={cls}>
                 {icon && <Icon className='nj-cell__left-icon' name={icon} />}
 
-                {title && <div className='nj-cell__title'>{title}{labelEl}</div>}
+                {title && <div className='nj-cell__title'><span>{title}{labelEl}</span></div>}
 
-                {children}
+                {children && <div className='nj-cell__value'>{children}</div>}
 
                 {value && <div className='nj-cell__value'>{value}</div>}
 
@@ -36,6 +41,8 @@ class Cell extends Component {
 }
 
 Cell.propTypes = {
+    required: PropTypes.bool,
+    className: PropTypes.string,
     title: PropTypes.string,
     value: PropTypes.string,
     label: PropTypes.string,
