@@ -39,10 +39,6 @@ class HomePage extends Component {
                             path: '/nav-bar'
                         },
                         {
-                            label: 'Pagination 分页',
-                            path: '/pagination'
-                        },
-                        {
                             label: 'Progress 进度条',
                             path: '/progress'
                         },

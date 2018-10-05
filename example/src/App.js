@@ -15,7 +15,6 @@ import {
     ProgressPage,
     ModalPage,
     TabPage,
-    PaginationPage,
     LayoutPage,
     FieldPage
 } from './pages';
@@ -34,7 +33,6 @@ const routes = [
     { path: '/progress', component: ProgressPage },
     { path: '/modal', component: ModalPage },
     { path: '/tab', component: TabPage },
-    { path: '/pagination', component: PaginationPage },
     { path: '/layout', component: LayoutPage },
     { path: '/field', component: FieldPage }
 ];

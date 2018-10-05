@@ -11,6 +11,5 @@ export { default as SwipePage } from './swipe';
 export { default as ProgressPage } from './progress';
 export { default as ModalPage } from './modal';
 export { default as TabPage } from './tab';
-export { default as PaginationPage } from './pagination';
 export { default as LayoutPage } from './layout';
 export { default as FieldPage } from './field';
