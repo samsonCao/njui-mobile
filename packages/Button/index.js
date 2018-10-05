@@ -17,6 +17,7 @@ class Button extends Component {
             ...others
         } = this.props;
         const cls = classNames({
+            'no-select': true,
             'nj-btn': true,
             'nj-btn--default': type === 'default',
             'nj-btn--primary': type === 'primary',
