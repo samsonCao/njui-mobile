@@ -18,7 +18,7 @@ npm install --save njui-mobile
 ```
 
 ### Yarn
- 
+
 ```bash
 yarn add njui-mobile
 ```
@@ -46,6 +46,3 @@ ReactDOM.render((
 ## License
 
 The MIT License(http://opensource.org/licenses/MIT)
-
-## 欢迎fork，欢迎star
-
