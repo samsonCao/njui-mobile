@@ -12,7 +12,7 @@ class IconPage extends Component {
                     <div className='demo-block__row'>
                         <Icon name='home' style={{ fontSize: '18px' }} />
                         <Icon name='shop' style={{ fontSize: '18px' }} />
-                        <Icon name='arrow-left' style={{ fontSize: '18px' }} />
+                        <Icon name='me' style={{ fontSize: '18px' }} />
                     </div>
                 </div>
 
