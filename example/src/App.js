@@ -16,7 +16,9 @@ import {
     ModalPage,
     TabPage,
     LayoutPage,
-    FieldPage
+    FieldPage,
+    CheckboxPage,
+    RadioPage
 } from './pages';
 
 const routes = [
@@ -34,7 +36,9 @@ const routes = [
     { path: '/modal', component: ModalPage },
     { path: '/tab', component: TabPage },
     { path: '/layout', component: LayoutPage },
-    { path: '/field', component: FieldPage }
+    { path: '/field', component: FieldPage },
+    { path: '/checkbox', component: CheckboxPage },
+    { path: '/radio', component: RadioPage }
 ];
 
 const App = (props, context) =>

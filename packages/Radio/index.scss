@@ -1,11 +1,11 @@
 @import "../style/fn";
 
-.nj-checkbox {
+.nj-radio {
     padding: 5px 0;
 
     &__group {
         &--inline {
-            .nj-checkbox {
+            .nj-radio {
                 display: inline-block;
                 &:not(:last-child) {
                     margin-right: 20px;
@@ -16,10 +16,10 @@
 
     &--disabled {
         .nj-icon {
-            &-checkbox {
+            &-radio {
                 color: #e5e5e5!important;
             }
-            &-checkbox-fill {
+            &-radio-fill {
                 color: #e5e5e5!important;
             }
         }
@@ -29,10 +29,10 @@
         margin-top: -4px;
         margin-right: 4px;
         vertical-align: middle;
-        &-checkbox {
+        &-radio {
             color: #aaa;
         }
-        &-checkbox-fill {
+        &-radio-fill {
             color: $blue;
         }
     }

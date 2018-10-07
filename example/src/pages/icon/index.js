@@ -60,8 +60,8 @@ class IconPage extends Component {
                 <div className='demo-block'>
                     <div className='demo-block__title'>图标库</div>
                     <div className='nj-clearfix'>
-                        {icons.map(item => (
-                            <Col span={8} key={item}>
+                        {icons.map((item, i) => (
+                            <Col span={8} key={i}>
                                 <div style={{ textAlign: 'center', marginBottom: '20px' }}>
                                     <Icon name={item} style={f28} />
                                     <div style={{ fontSize: '12px', lineHeight: '30px' }}>icon-{item}</div>
@@ -81,7 +81,7 @@ class IconPage extends Component {
                 <div className='demo-block'>
                     <div className='demo-block__title'>颜色</div>
                     <div className='demo-block__row'>
-                        {colors.map(item => <Icon name='home' key={item} style={{ ...f28, color: item }} />)}
+                        {colors.map((item, i) => <Icon name='home' key={i} style={{ ...f28, color: item }} />)}
                     </div>
                 </div>
 

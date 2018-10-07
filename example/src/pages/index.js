@@ -13,3 +13,5 @@ export { default as ModalPage } from './modal';
 export { default as TabPage } from './tab';
 export { default as LayoutPage } from './layout';
 export { default as FieldPage } from './field';
+export { default as CheckboxPage } from './checkbox';
+export { default as RadioPage } from './radio';
