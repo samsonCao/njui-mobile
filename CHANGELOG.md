@@ -1,4 +1,17 @@
 # 更新日志
+
+## v0.1.1
+
+`2018-10-07`
+
+更新内容:
++ 新增组件: Checkbox
++ 新增组件: Radio
++ 调整了 Icon 的样式
++ Button 增加 icon 参数
++ Button 增加 loading 参数
+
+
 ## v0.1.0
 
 `2018-10-05`
@@ -19,14 +32,3 @@
 + 新增组件: Swipe
 + 新增组件: TabBar
 + 新增组件: Toast
-
-## v0.1.1
-
-`2018-10-07`
-
-更新内容:
-+ 新增组件: Checkbox
-+ 新增组件: Radio
-+ 调整了 Icon 的样式
-+ Button 增加 icon 参数
-+ Button 增加 loading 参数

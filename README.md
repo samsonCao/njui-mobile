@@ -43,6 +43,9 @@ ReactDOM.render((
 
 <img src="./assets/preview_code.png" style="width: 200px" />
 
+## Changelog
+[更新日志](./CHANGELOG.md)
+
 ## License
 
 The MIT License(http://opensource.org/licenses/MIT)
