@@ -7,16 +7,17 @@
  */
 @font-face {
     font-family: 'nj-icon';
-    src:  url('http://p7fm1jign.bkt.gdipper.com/nj-icon.eot?volkmu');
-    src:  url('http://p7fm1jign.bkt.gdipper.com/nj-icon.eot?volkmu#iefix') format('embedded-opentype'),
-    url('http://p7fm1jign.bkt.gdipper.com/nj-icon.ttf?volkmu') format('truetype'),
-    url('http://p7fm1jign.bkt.gdipper.com/nj-icon.woff?volkmu') format('woff'),
-    url('http://p7fm1jign.bkt.gdipper.com/nj-icon.svg?volkmu#nj-icon') format('svg');
+    src:  url('http://p7fm1jign.bkt.gdipper.com/nj-icon.eot?12h9rd');
+    src:  url('http://p7fm1jign.bkt.gdipper.com/nj-icon.eot?12h9rd#iefix') format('embedded-opentype'),
+    url('http://p7fm1jign.bkt.gdipper.com/nj-icon.ttf?12h9rd') format('truetype'),
+    url('http://p7fm1jign.bkt.gdipper.com/nj-icon.woff?12h9rd') format('woff'),
+    url('http://p7fm1jign.bkt.gdipper.com/nj-icon.svg?12h9rd#nj-icon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 .nj-icon {
+    display: inline-block;
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'nj-icon' !important;
     speak: none;
@@ -31,55 +32,140 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.nj-icon-arrow-down:before {
+// 加载动画
+.nj__loading {
+    -webkit-animation: nj-rotate 1s linear infinite;
+    animation: nj-rotate 1s linear infinite;
+}
+@-webkit-keyframes nj-rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes nj-rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.nj-icon-sort:before {
     content: "\e900";
 }
-.nj-icon-question-circle:before {
+.nj-icon-menu:before {
     content: "\e901";
 }
-.nj-icon-plus-circle:before {
+.nj-icon-upload:before {
     content: "\e902";
 }
-.nj-icon-plus:before {
+.nj-icon-setting:before {
     content: "\e903";
 }
-.nj-icon-close-circle:before {
+.nj-icon-delete:before {
     content: "\e904";
 }
-.nj-icon-down:before {
+.nj-icon-close-circle:before {
     content: "\e905";
 }
-.nj-icon-up:before {
+.nj-icon-arrow-up:before {
     content: "\e906";
 }
-.nj-icon-left:before {
+.nj-icon-arrow-down:before {
     content: "\e907";
 }
-.nj-icon-right:before {
+.nj-icon-check:before {
     content: "\e908";
 }
-.nj-icon-close:before {
+.nj-icon-star-fill:before {
     content: "\e909";
 }
-.nj-icon-category:before {
+.nj-icon-star:before {
     content: "\e90a";
 }
-.nj-icon-home:before {
+.nj-icon-search:before {
     content: "\e90b";
 }
-.nj-icon-me:before {
+.nj-icon-refresh:before {
     content: "\e90c";
 }
-.nj-icon-message:before {
+.nj-icon-loading:before {
     content: "\e90d";
 }
-.nj-icon-shop:before {
+.nj-icon-up:before {
     content: "\e90e";
 }
-.nj-icon-star:before {
+.nj-icon-right:before {
     content: "\e90f";
 }
-.nj-icon-to_top:before {
+.nj-icon-left:before {
     content: "\e910";
+}
+.nj-icon-down:before {
+    content: "\e911";
+}
+.nj-icon-more:before {
+    content: "\e912";
+}
+.nj-icon-share:before {
+    content: "\e913";
+}
+.nj-icon-checkbox-fill:before {
+    content: "\e914";
+}
+.nj-icon-radio-fill:before {
+    content: "\e915";
+}
+.nj-icon-radio:before {
+    content: "\e916";
+}
+.nj-icon-question:before {
+    content: "\e917";
+}
+.nj-icon-question-fill:before {
+    content: "\e918";
+}
+.nj-icon-info-fill:before {
+    content: "\e919";
+}
+.nj-icon-info-circle:before {
+    content: "\e91a";
+}
+.nj-icon-plus:before {
+    content: "\e91b";
+}
+.nj-icon-close:before {
+    content: "\e91c";
+}
+.nj-icon-checkbox:before {
+    content: "\e91d";
+}
+.nj-icon-category:before {
+    content: "\e91e";
+}
+.nj-icon-home:before {
+    content: "\e91f";
+}
+.nj-icon-me:before {
+    content: "\e920";
+}
+.nj-icon-message:before {
+    content: "\e921";
+}
+.nj-icon-shop:before {
+    content: "\e922";
+}
+.nj-icon-to-top:before {
+    content: "\e923";
 }
 

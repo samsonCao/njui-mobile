@@ -50,7 +50,7 @@ NavBar.propTypes = {
     /**
      * 左侧 Icon 名称
      */
-    'left-icon': PropTypes.bool,
+    'left-icon': PropTypes.string,
     /**
      * 左侧文字
      */

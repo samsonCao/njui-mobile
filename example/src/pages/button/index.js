@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types'; // eslint-disable-line
-import { Button, NavBar } from 'njui-mobile';
+import { Button, NavBar, Toast } from 'njui-mobile';
 
 class ButtonPage extends Component {
     render() {
@@ -53,14 +53,24 @@ class ButtonPage extends Component {
                 <div className='demo-block'>
                     <div className='demo-block__title'>点击事件</div>
                     <div className='demo-block__row'>
-                        <Button onClick={() => window.alert('You clicked me!')}>Click</Button>
+                        <Button type='primary' onClick={() => Toast.show('你点击了按钮!')}>点我</Button>
+                    </div>
+                </div>
+
+                <div className='demo-block'>
+                    <div className='demo-block__title'>图标按钮</div>
+                    <div className='demo-block__row'>
+                        <Button icon='star' type='warning'>点赞</Button>
                     </div>
                 </div>
 
                 <div className='demo-block'>
                     <div className='demo-block__title'>加载状态</div>
                     <div className='demo-block__row'>
-                        <Button loading>加载中</Button>
+                        <Button size='large' loading>加载中</Button>
+                    </div>
+                    <div className='demo-block__row'>
+                        <Button size='normal' loading>加载中</Button>
                     </div>
                 </div>
             </div>

@@ -13,17 +13,37 @@ class IconPage extends Component {
             'me',
             'star',
             'arrow-down',
-            'to_top',
+            'to-top',
 
-            // ant icon
-            'message',
+            // 图表来源
+            // http://www.iconfont.cn/collections/detail?spm=a313x.7781069.1998910419.d9df05512&cid=317
+            'sort',
+            'menu',
+            'upload',
+            'setting',
+            'delete',
+            'close',
+            'arrow-up',
+            'arrow-down',
+            'check',
+            'star',
+            'star-fill',
+            'search',
+            'refresh',
+            'loading',
             'up',
-            'right',
             'down',
             'left',
-            'question-circle',
-            'plus',
-            'plus-circle'
+            'right',
+            'more',
+            'share',
+            'checkbox',
+            'checkbox-fill',
+            'radio',
+            'radio-fill',
+            'info-fill',
+            'info-circle',
+            'plus'
         ];
         const colors = [
             '#f44336',
@@ -44,7 +64,7 @@ class IconPage extends Component {
                             <Col span={8} key={item}>
                                 <div style={{ textAlign: 'center', marginBottom: '20px' }}>
                                     <Icon name={item} style={f28} />
-                                    <div style={{ fontSize: '12px' }}>icon-{item}</div>
+                                    <div style={{ fontSize: '12px', lineHeight: '30px' }}>icon-{item}</div>
                                 </div>
                             </Col>
                         ))}
@@ -52,9 +72,16 @@ class IconPage extends Component {
                 </div>
 
                 <div className='demo-block'>
+                    <div className='demo-block__title'>Loading</div>
+                    <div className='demo-block__row'>
+                        <Icon name='loading' className='nj__loading' style={f28} />
+                    </div>
+                </div>
+
+                <div className='demo-block'>
                     <div className='demo-block__title'>颜色</div>
                     <div className='demo-block__row'>
-                        {colors.map(item => <Icon name='home' key={item} style={{ fontSize: '40px', color: item }} />)}
+                        {colors.map(item => <Icon name='home' key={item} style={{ ...f28, color: item }} />)}
                     </div>
                 </div>
 

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { classNames } from '../utils';
 import './index.scss';
+import Icon from '../Icon';
 
 class Button extends Component {
     render() {
@@ -14,6 +15,7 @@ class Button extends Component {
             loading,
             children,
             className,
+            icon,
             ...others
         } = this.props;
 
@@ -42,9 +44,16 @@ class Button extends Component {
             [className]: className
         });
 
-        // TODO: Button needs to support loading @liuzhiyuan
+        let iconEl;
+        if (icon) {
+            iconEl = <Icon name={icon} />;
+        }
+        if (loading) {
+            iconEl = <Icon name='loading' className='nj__loading' />;
+        }
         return (
             <button className={cls} {...others}>
+                {iconEl}
                 <span>{children}</span>
             </button>
         );
@@ -76,6 +85,10 @@ Button.propTypes = {
      * 加载状态
      */
     loading: PropTypes.bool,
+    /**
+     * 图标按钮
+     */
+    icon: PropTypes.string,
     children: PropTypes.node
 };
 Button.defaultProps = {};
