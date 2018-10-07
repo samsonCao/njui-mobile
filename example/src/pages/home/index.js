@@ -199,7 +199,7 @@ class HomePage extends Component {
                                             {menu.label}
                                             {menu.badge}
                                         </span>
-                                        <Icon name='arrow' />
+                                        <Icon name='down' />
                                     </div>
                                     <div className='demo-list__row--body'>
                                         {menu.open && menu.children && menu.children.map((child, j) => {

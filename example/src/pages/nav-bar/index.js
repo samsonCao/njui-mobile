@@ -6,14 +6,14 @@ class NavBarPage extends Component {
     render() {
         return (
             <div className='page'>
-                <NavBar left-text='返回' title='NavBar' fixed onLeftClick={() => window.history.go(-1)} />
+                <NavBar left-icon='left' title='NavBar' fixed onLeftClick={() => window.history.go(-1)} />
 
                 <div className='demo-block'>
                     <div className='demo-block__title'>基础用法</div>
                     <div className='demo-block__row' style={{ marginLeft: '-15px', marginRight: '-15px' }}>
                         <NavBar
                             left-arrow
-                            left-text='返回'
+                            left-icon='left'
                             title='标题'
                             right-text='按钮'
                             onLeftClick={() => window.alert('Click Left')}
@@ -25,7 +25,7 @@ class NavBarPage extends Component {
                 <div className='demo-block'>
                     <div className='demo-block__title'>高级用法</div>
                     <div className='demo-block__row' style={{ marginLeft: '-15px', marginRight: '-15px' }}>
-                        <NavBar left-arrow left-text='返回' title='标题' right-text='按钮' right-icon='search' />
+                        <NavBar left-arrow left-icon='left' title='标题' right-text='按钮' right-icon='search' />
                     </div>
                 </div>
             </div>

@@ -6,7 +6,7 @@ class TabPage extends Component {
     render() {
         return (
             <div>
-                <NavBar left-text='返回' title='Tab' fixed onLeftClick={() => window.history.go(-1)} />
+                <NavBar left-icon='left' title='Tab' fixed onLeftClick={() => window.history.go(-1)} />
             </div>
         );
     }

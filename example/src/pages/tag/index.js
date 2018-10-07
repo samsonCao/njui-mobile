@@ -6,7 +6,7 @@ class TagPage extends Component {
     render() {
         return (
             <div className='page'>
-                <NavBar left-text='返回' title='Tag' fixed onLeftClick={() => window.history.go(-1)} />
+                <NavBar left-icon='left' title='Tag' fixed onLeftClick={() => window.history.go(-1)} />
 
                 <div className='demo-block'>
                     <div className='demo-block__title'>基础用法</div>
