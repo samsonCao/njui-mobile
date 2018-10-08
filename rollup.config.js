@@ -4,6 +4,7 @@ import external from 'rollup-plugin-peer-deps-external';
 import scss from 'rollup-plugin-scss';
 import resolve from 'rollup-plugin-node-resolve';
 import url from 'rollup-plugin-url';
+import copy from 'rollup-plugin-cpy';
 
 import pkg from './package.json';
 
@@ -26,15 +27,10 @@ export default {
         scss({
             output: './dist/njui-mobile.css'
         }),
-        url({
-            limit: 100 * 1024,
-            publishPath: './assets/fonts/',
-            include: [
-                './packages/assets/fonts/nj-icon.ttf',
-                './packages/assets/fonts/nj-icon.svg',
-                './packages/assets/fonts/nj-icon.eot',
-                './packages/assets/fonts/nj-icon.woff'
-            ]
+        url(),
+        copy({
+            files: 'packages/Icon/fonts/nj-icon.*',
+            dest: 'dist/fonts'
         }),
         babel({
             exclude: 'node_modules/**',
