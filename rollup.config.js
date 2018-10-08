@@ -13,12 +13,12 @@ export default {
         {
             file: pkg.main,
             format: 'cjs',
-            sourcemap: true
+            sourcemap: false
         },
         {
             file: pkg.module,
             format: 'es',
-            sourcemap: true
+            sourcemap: false
         }
     ],
     plugins: [
@@ -26,7 +26,16 @@ export default {
         scss({
             output: './dist/njui-mobile.css'
         }),
-        url(),
+        url({
+            limit: 100 * 1024,
+            publishPath: './assets/fonts/',
+            include: [
+                './packages/assets/fonts/nj-icon.ttf',
+                './packages/assets/fonts/nj-icon.svg',
+                './packages/assets/fonts/nj-icon.eot',
+                './packages/assets/fonts/nj-icon.woff'
+            ]
+        }),
         babel({
             exclude: 'node_modules/**',
             plugins: ['external-helpers']
