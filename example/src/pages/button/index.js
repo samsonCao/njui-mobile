@@ -34,7 +34,10 @@ class ButtonPage extends Component {
                 <div className='demo-block'>
                     <div className='demo-block__title'>按钮尺寸</div>
                     <div className='demo-block__row'>
-                        <Button size='large'>大号按钮</Button>
+                        <Button size='large' >大号按钮</Button>
+                    </div>
+                    <div className='demo-block__row'>
+                        <Button size='gradient'>大号渐变色按钮</Button>
                     </div>
                     <div className='demo-block__row'>
                         <Button size='normal'>普通按钮</Button>

@@ -19,7 +19,6 @@ class Button extends Component {
             style,
             ...others
         } = this.props;
-
         let unclickable = false;
         if (disabled) {
             unclickable = true;
@@ -27,6 +26,7 @@ class Button extends Component {
         if (loading) {
             unclickable = true;
         }
+
         const cls = classNames({
             'no-select': true,
             'nj-btn': true,
@@ -38,6 +38,7 @@ class Button extends Component {
             'nj-btn--small': size === 'small',
             'nj-btn--normal': size === 'normal',
             'nj-btn--large': size === 'large',
+            'nj-btn--gradient': size === 'gradient',
             'nj-btn--block': block,
             'nj-btn--plain': plain,
             'nj-btn--disabled': disabled,
@@ -63,19 +64,15 @@ class Button extends Component {
 
 Button.propTypes = {
     /**
-     * 样式
-     */
-    style: PropTypes.object,
-    /**
      * 按钮类型
      */
     type: PropTypes.oneOf(['default', 'primary', 'warning', 'danger']),
     /**
-     * 按钮尺寸
+     * 按钮尺寸 gradient-带渐变背景色的large
      */
-    size: PropTypes.oneOf(['mini', 'small', 'normal', 'large']),
+    size: PropTypes.oneOf(['mini', 'small', 'normal', 'large', 'gradient']),
     /**
-     * 全屏按钮
+     * 全屏按钮-块级vs行内
      */
     block: PropTypes.bool,
     /**
@@ -91,10 +88,21 @@ Button.propTypes = {
      */
     loading: PropTypes.bool,
     /**
+     * 按钮文案
+     */
+    children: PropTypes.node,
+    /**
+     * 类名
+     */
+    className: PropTypes.string,
+    /**
      * 图标按钮
      */
     icon: PropTypes.string,
-    children: PropTypes.node
+    /**
+     * 样式
+     */
+    style: PropTypes.object,
 };
 Button.defaultProps = {};
 
