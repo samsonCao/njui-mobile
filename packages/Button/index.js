@@ -16,6 +16,7 @@ class Button extends Component {
             children,
             className,
             icon,
+            style,
             ...others
         } = this.props;
 
@@ -52,7 +53,7 @@ class Button extends Component {
             iconEl = <Icon name='loading' className='nj__loading' />;
         }
         return (
-            <button className={cls} {...others}>
+            <button style={style} className={cls} {...others}>
                 {iconEl}
                 <span>{children}</span>
             </button>
@@ -61,6 +62,10 @@ class Button extends Component {
 }
 
 Button.propTypes = {
+    /**
+     * 样式
+     */
+    style: PropTypes.object,
     /**
      * 按钮类型
      */
